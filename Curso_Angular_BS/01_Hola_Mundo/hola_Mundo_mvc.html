@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Curso de Angular JS y BS"/>
+    <title>Curso de Angular JS y BS</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="./js/angular.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body ng-app="appMain" ng-controller="AppController">
+    <div class="container">
+    <header class="jumbotron">
+        <h1>{{titulo}}</h1>
+    </header>
+    <article>
+        <form>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" ng-model="nombre" placeholder="tu nombre"/>
+            </p>
+            <p>
+                <button ng-click="borrar()">borrar</button>
+            </p>
+        </form>
+        Hola {{nombre || 'Mundo'}}
+    </article>
+    <footer>
+        <p class="well">{{autor}}</p>
+    </footer>
+    </div>
+</body>
+</html>
