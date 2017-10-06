@@ -1,2 +1,2 @@
-# Angular_Sensu
+# Angular-Sensu
 curso de bootstrap y angular
